@@ -20,6 +20,27 @@ import { Button } from 'jc'
 
 * 🔥爆速开发组件库框架
 
+组件开发步骤
+
+
+
+遵循规范：
+
+1.*import* React,{FC,ButtonHTMLAttributes,AnchorHTMLAttributes} *from* 'react';
+
+
+
+由于使用的是第三方loader，所以
+
+这里必须遵循第三方loader的ast语法解析器
+
+不能使用React.FC 必须导出的形式
+
+2. 组件必须export name
+
+   export* const Input: FC<ButtonProps> = (props) => {
+
+3. *export* *default* Button;
 
 ### 一些本地开发命令
 

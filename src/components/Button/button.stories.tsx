@@ -2,7 +2,10 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Button from './button'
-
+// const styles: React.CSSProperties = {
+//     textAlign: 'center'
+// }
+// const CenterDecorator = (storyFn: any) => <div style={styles}>{storyFn()}</div>
 const defaultButton = () => (
     <Button onClick={action('clicked')}>JC Button</Button>
 )
@@ -21,6 +24,7 @@ const buttonWithType = () => (
     </>
 )
 storiesOf('Button Component', module)
+    // .addDecorator(CenterDecorator)
     .add('Default Button', defaultButton)
-    .add('Size Button',buttonWithSize)
-    .add('btnType Button',buttonWithType)
+    .add('Size Button', buttonWithSize)
+    .add('btnType Button', buttonWithType)
