@@ -25,6 +25,6 @@ const buttonWithType = () => (
 )
 storiesOf('Button Component', module)
     // .addDecorator(CenterDecorator)
-    .add('Default Button', defaultButton)
+    .add('Button', defaultButton)
     .add('Size Button', buttonWithSize)
     .add('btnType Button', buttonWithType)

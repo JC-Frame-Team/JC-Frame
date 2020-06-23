@@ -3,6 +3,7 @@
 
 #  开发组件库的高级框架  JC-Frame
 ##  爆速开发吧
+## 自动生成文档 按照ReactDocGen的规则来写注释即可自动生成注释 文档等
 
 ~~~javascript
 npm install jc --save

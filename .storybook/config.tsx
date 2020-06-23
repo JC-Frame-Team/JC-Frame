@@ -11,12 +11,13 @@ const wrapperStyle: React.CSSProperties = {
 
 const storyWrapper = (stroyFn: any) => (
   <div style={wrapperStyle}>
-    <h3>JC组件演示</h3>
+    <h3>JC组件展台</h3>
     {stroyFn()}
   </div>
 )
 addDecorator(storyWrapper)
 addDecorator(withInfo)
+// 信息直接显示  header直接隐藏掉
 addParameters({info: { inline: true, header: false}})
 const loaderFn = () => {
   const allExports = [require('../src/welcome.stories.tsx')];

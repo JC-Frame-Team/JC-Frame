@@ -10,7 +10,14 @@ export interface SubMenuProps {
     title: string;
     className?: string
 }
-const SubMenu: React.FC<SubMenuProps> = ({ index, title, children, className }) => {
+/**
+ * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
+ * 二级菜单栏 submenu
+ * ~~~js
+ * import { SubMenu,Menu } from 'jc'
+ * ~~~
+ */
+export const SubMenu: React.FC<SubMenuProps> = ({ index, title, children, className }) => {
     const context = useContext(MenuContext)
     const openedSubMenus = context.defaultOpenSubMenus as Array<string> || []
 
@@ -76,4 +83,4 @@ const SubMenu: React.FC<SubMenuProps> = ({ index, title, children, className }) 
 }
 
 SubMenu.displayName = 'SubMenu'
-export default SubMenu
+export default SubMenu;
