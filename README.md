@@ -5,12 +5,10 @@
 ##  爆速开发吧
 ## 自动生成文档 按照ReactDocGen的规则来写注释即可自动生成注释 文档等
 
+### 使用
 ~~~javascript
 npm install jc --save
 ~~~
-
-### 使用
-
 ~~~javascript
 // 加载样式
 import 'jc/dist/index.css'
